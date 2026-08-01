@@ -1,5 +1,5 @@
-import Background from "../components/auth/Background";
-import Logo from "../components/auth/Logo";
+import Background from "../components/ui/Background";
+import Logo from "../components/layout/Logo";
 import AuthCard from "../components/auth/AuthCard";
 import AuthInput from "../components/auth/AuthInput";
 import RememberRow from "../components/auth/RememberRow";
