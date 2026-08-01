@@ -47,46 +47,23 @@ const AvatarPlaceholder = ({ size = "md" }) => {
 
   return (
     <div
-      className={`
-        ${config.wrapper}
-        flex
-        items-center
-        justify-center
-        overflow-hidden
-        rounded-full
-        ${config.border}
-        border-[#3E828E]
-        bg-gradient-to-br
-        from-[#FFF9F5]
-        via-[#FFEBED]
-        to-[#F8FBFA]
-      `}
+      className={` ${config.wrapper} flex items-center justify-center overflow-hidden rounded-full ${config.border} border-[#3E828E] bg-gradient-to-br from-[#FFF9F5] via-[#FFEBED] to-[#F8FBFA]`}
     >
       <div
-        className={`
-          grid
-          ${config.gap}
-          rounded-md
-          bg-white
-          shadow-sm
-          ${config.padding}
-        `}
+        className={`grid ${config.gap} rounded-md bg-white shadow-sm ${config.padding} `}
         style={{
           gridTemplateColumns: `repeat(${pattern[0].length}, auto)`,
         }}
       >
         {pattern.flatMap((row, rowIndex) =>
-          row.split("").map((cell, colIndex) => (
-            <div
-              key={`${rowIndex}-${colIndex}`}
-              className={`
-                aspect-square
-                ${config.pixel}
-                rounded-[1px]
-                ${colors[cell]}
-              `}
-            />
-          )),
+          row
+            .split("")
+            .map((cell, colIndex) => (
+              <div
+                key={`${rowIndex}-${colIndex}`}
+                className={`aspect-square ${config.pixel} rounded-[1px] ${colors[cell]} `}
+              />
+            )),
         )}
       </div>
     </div>

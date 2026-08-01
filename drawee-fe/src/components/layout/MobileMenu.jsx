@@ -5,23 +5,7 @@ const MobileMenu = ({ open, setOpen, links, isLoggedin }) => {
   if (!open) return null;
 
   return (
-    <div
-      className="
-      absolute
-      top-full
-      right-6
-      mt-3
-      w-56
-      rounded-2xl
-      border
-      border-white/40
-      bg-white/80
-      backdrop-blur-xl
-      shadow-2xl
-      overflow-hidden
-      md:hidden
-    "
-    >
+    <div className="absolute right-6 top-full mt-3 w-56 overflow-hidden rounded-2xl border border-white/40 bg-white/80 shadow-2xl backdrop-blur-xl md:hidden">
       {links.map((link) => (
         <NavLink
           key={link.name}

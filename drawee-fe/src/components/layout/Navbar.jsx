@@ -17,18 +17,7 @@ const Navbar = () => {
   const { isLoggedin } = useContext(AppContent);
 
   return (
-    <header
-      className="
-        fixed
-        top-0
-        left-0
-        right-0
-        z-50
-        border-b border-white/20
-        bg-white/20
-        backdrop-blur-xl
-      "
-    >
+    <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/20 bg-white/20 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <Logo />
@@ -57,25 +46,14 @@ const Navbar = () => {
           {isLoggedin ? (
             <NavLink
               to="/profile"
-              className="
-                flex h-11 w-11 items-center justify-center
-                rounded-full bg-[#27153D] text-white
-                transition hover:bg-[#3E828E]
-              "
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-[#27153D] text-white transition hover:bg-[#3E828E]"
             >
               <User size={20} />
             </NavLink>
           ) : (
             <NavLink
               to="/login"
-              className="
-                rounded-full
-                bg-[#27153D]
-                px-4 sm:px-6 py-2
-                text-white
-                transition
-                hover:bg-[#3E828E]
-              "
+              className="rounded-full bg-[#27153D] px-4 py-2 text-white transition hover:bg-[#3E828E] sm:px-6"
             >
               Login
             </NavLink>

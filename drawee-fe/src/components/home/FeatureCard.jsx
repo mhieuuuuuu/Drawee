@@ -1,19 +1,6 @@
 const FeatureCard = ({ icon, title, description }) => {
   return (
-    <div
-      className="
-        rounded-3xl
-        border border-white/40
-        bg-white/20
-        backdrop-blur-xl
-        p-8
-        transition-all
-        duration-300
-        hover:-translate-y-2
-        hover:shadow-2xl
-        hover:shadow-[#3E828E]/20
-      "
-    >
+    <div className="rounded-3xl border border-white/40 bg-white/20 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#3E828E]/20">
       <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#27153D] text-3xl">
         {icon}
       </div>

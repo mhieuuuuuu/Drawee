@@ -27,68 +27,37 @@ const ArtworkPlaceholder = ({ variant = "default" }) => {
 
   return (
     <div
-      className={`
-        flex
-        h-full
-        w-full
-        flex-col
-        items-center
-        justify-center
-        rounded-2xl
-        border
-        border-white/60
-        bg-gradient-to-br
-        from-[#FFF9F5]
-        via-[#FFEBED]
-        to-[#F8FBFA]
-        ${isCompact ? "p-4" : isModal ? "p-5" : "p-8"}
-      `}
+      className={`flex h-full w-full flex-col items-center justify-center rounded-2xl border border-white/60 bg-gradient-to-br from-[#FFF9F5] via-[#FFEBED] to-[#F8FBFA] ${isCompact ? "p-4" : isModal ? "p-5" : "p-8"} `}
     >
       {/* Pixel Artwork */}
 
       <div
-        className={`
-          grid
-          rounded-lg
-          border-4
-          border-[#27153D]
-          bg-white
-          shadow-lg
-          ${
-            isCompact
-              ? "gap-[2px] p-2"
-              : isModal
-                ? "gap-[2px] p-2.5"
-                : "gap-[3px] p-3"
-          }
-        `}
+        className={`grid rounded-lg border-4 border-[#27153D] bg-white shadow-lg ${
+          isCompact
+            ? "gap-[2px] p-2"
+            : isModal
+              ? "gap-[2px] p-2.5"
+              : "gap-[3px] p-3"
+        } `}
         style={{
           gridTemplateColumns: `repeat(${pattern[0].length}, auto)`,
         }}
       >
         {pattern.flatMap((row, rowIndex) =>
-          row.split("").map((cell, colIndex) => (
-            <div
-              key={`${rowIndex}-${colIndex}`}
-              className={`
-                aspect-square
-                rounded-[2px]
-                ${pixelSize}
-                ${colors[cell]}
-              `}
-            />
-          )),
+          row
+            .split("")
+            .map((cell, colIndex) => (
+              <div
+                key={`${rowIndex}-${colIndex}`}
+                className={`aspect-square rounded-[2px] ${pixelSize} ${colors[cell]} `}
+              />
+            )),
         )}
       </div>
 
       {!isCompact && (
         <h3
-          className={`
-            mt-5
-            font-['Pixelify_Sans']
-            text-[#27153D]
-            ${isModal ? "text-xl md:text-2xl" : "text-3xl"}
-          `}
+          className={`mt-5 font-['Pixelify_Sans'] text-[#27153D] ${isModal ? "text-xl md:text-2xl" : "text-3xl"} `}
         >
           Artwork unavailable
         </h3>

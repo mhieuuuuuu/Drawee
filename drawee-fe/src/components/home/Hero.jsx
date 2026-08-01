@@ -3,21 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section
-      className="
-    relative
-    mx-auto
-    flex
-    min-h-[calc(100vh-80px)]
-    w-full
-    max-w-7xl
-    flex-col
-    items-center
-    justify-center
-    px-6
-    text-center
-  "
-    >
+    <section className="relative mx-auto flex min-h-[calc(100vh-80px)] w-full max-w-7xl flex-col items-center justify-center px-6 text-center">
       <p className="mb-4 rounded-full bg-white/60 px-4 py-2 text-sm text-[#3E828E] backdrop-blur">
         Pixel Art • Creativity • Community
       </p>

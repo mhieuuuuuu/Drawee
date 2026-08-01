@@ -15,23 +15,7 @@ const SearchBar = ({ search, setSearch, sort, setSort }) => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search artworks..."
-          className="
-            h-14
-            w-full
-            rounded-full
-            border
-            border-white/50
-            bg-white/50
-            pl-14
-            pr-5
-            text-[#27153D]
-            backdrop-blur-xl
-            outline-none
-            transition
-            focus:border-[#3E828E]
-            focus:ring-2
-            focus:ring-[#3E828E]/20
-          "
+          className="h-14 w-full rounded-full border border-white/50 bg-white/50 pl-14 pr-5 text-[#27153D] outline-none backdrop-blur-xl transition focus:border-[#3E828E] focus:ring-2 focus:ring-[#3E828E]/20"
         />
       </div>
 

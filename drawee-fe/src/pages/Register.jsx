@@ -40,16 +40,7 @@ const Register = () => {
 
   return (
     <Background>
-      <div
-        className="
-                min-h-screen
-                flex
-                flex-col
-                justify-center
-                items-center
-                gap-5
-                "
-      >
+      <div className="flex min-h-screen flex-col items-center justify-center gap-5">
         <Logo />
 
         <AuthCard title="Register">
@@ -78,9 +69,9 @@ const Register = () => {
 
             <AuthButton onClick={RegisterHandler}>Register</AuthButton>
 
-            <p className="text-center text-white text-sm">
+            <p className="text-center text-sm text-white">
               Already have an account?{" "}
-              <Link to="/login" className="text-[#27153D] font-semibold">
+              <Link to="/login" className="font-semibold text-[#27153D]">
                 Login
               </Link>
             </p>

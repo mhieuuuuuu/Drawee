@@ -40,16 +40,7 @@ const Login = () => {
 
   return (
     <Background>
-      <div
-        className="
-                min-h-screen
-                flex
-                flex-col
-                justify-center
-                items-center
-                gap-5
-                "
-      >
+      <div className="flex min-h-screen flex-col items-center justify-center gap-5">
         <Logo />
 
         <AuthCard title="Login">
@@ -73,9 +64,9 @@ const Login = () => {
 
             <AuthButton onClick={LoginHandler}>Login</AuthButton>
 
-            <p className="text-center text-white text-sm">
+            <p className="text-center text-sm text-white">
               Don't have an account?{" "}
-              <Link to="/register" className="text-[#27153D] font-semibold">
+              <Link to="/register" className="font-semibold text-[#27153D]">
                 Register
               </Link>
             </p>

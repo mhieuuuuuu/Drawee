@@ -47,7 +47,7 @@ const Discover = () => {
         <Navbar />
         <main className="pt-[90px]">
           <section className="mx-auto max-w-7xl px-6 pt-12">
-            <h1 className="font-['Pixelify_Sans'] text-center text-5xl text-[#27153D] md:text-6xl">
+            <h1 className="text-center font-['Pixelify_Sans'] text-5xl text-[#27153D] md:text-6xl">
               Discover
             </h1>
 

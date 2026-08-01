@@ -7,7 +7,7 @@ const Logo = () => {
       <img
         src={logo}
         alt="logo"
-        className="h-20 w-20 object-contain rounded-xl"
+        className="h-20 w-20 rounded-xl object-contain"
       />
 
       <div>

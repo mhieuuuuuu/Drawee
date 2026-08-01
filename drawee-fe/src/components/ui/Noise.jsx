@@ -1,6 +1,6 @@
 const Noise = () => {
   return (
-    <svg className="absolute inset-0 w-full h-full opacity-[0.08] pointer-events-none">
+    <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.08]">
       <filter id="noiseFilter">
         <feTurbulence
           type="fractalNoise"
